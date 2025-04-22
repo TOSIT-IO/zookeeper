@@ -57,6 +57,16 @@
       <directoryMode>${rwx.file.permission}</directoryMode>
     </fileSet>
     <fileSet>
+      <!-- ZooKeeper generated api document -->
+      <directory>.</directory>
+      <excludes>
+        <exclude>*/**</exclude>
+      </excludes>
+      <outputDirectory>docs/apidocs</outputDirectory>
+      <fileMode>${rw.file.permission}</fileMode>
+      <directoryMode>${rwx.file.permission}</directoryMode>
+    </fileSet>
+    <fileSet>
       <!-- ZooKeeper jute generated api document -->
       <directory>${project.basedir}/../zookeeper-jute/target/apidocs</directory>
       <outputDirectory>docs/apidocs/zookeeper-jute</outputDirectory>
